@@ -14,9 +14,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.boutiqueshop.R;
-import com.example.boutiqueshop.databinding.FragmentDashboardBinding;
 import com.example.boutiqueshop.databinding.FragmentNotificationsBinding;
-import com.example.boutiqueshop.ui.dashboard.DashboardViewModel;
+
 
 public class NotificationsFragment extends Fragment {
 

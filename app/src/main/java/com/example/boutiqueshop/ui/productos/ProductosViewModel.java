@@ -1,18 +1,19 @@
-package com.example.boutiqueshop.ui.dashboard;
+package com.example.boutiqueshop.ui.productos;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class DashboardViewModel extends ViewModel {
+public class ProductosViewModel extends ViewModel {
     private final MutableLiveData<String> mText;
 
-    public DashboardViewModel() {
+    public ProductosViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("");
+        mText.setValue("Productos");
     }
 
     public LiveData<String> getText() {
         return mText;
     }
+
 }

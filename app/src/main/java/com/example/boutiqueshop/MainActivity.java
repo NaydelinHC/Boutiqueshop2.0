@@ -34,10 +34,10 @@ import com.example.boutiqueshop.R;
 import com.airbnb.lottie.LottieAnimationView;
 import com.bumptech.glide.Glide;
 import com.example.boutiqueshop.databinding.ActivityMainBinding;
-import com.example.boutiqueshop.ui.dashboard.DashboardFragment;
 import com.example.boutiqueshop.ui.gallery.GalleryFragment;
 import com.example.boutiqueshop.ui.home.HomeFragment;
 import com.example.boutiqueshop.ui.notifications.NotificationsFragment;
+import com.example.boutiqueshop.ui.productos.ProductosFragment;
 import com.example.boutiqueshop.ui.slideshow.SlideshowFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 import com.google.android.material.bottomnavigation.BottomNavigationMenuView;
@@ -145,9 +145,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 replaceFragment(new HomeFragment());
                 setLottieAnimation(itemId, R.raw.home);
                 break;
-            case R.id.navigation_dashboard:
-                replaceFragment(new DashboardFragment());
-                setLottieAnimation(itemId, R.raw.dashboard);
+            case R.id.navigation_productos:
+                replaceFragment(new ProductosFragment());
+                setLottieAnimation(itemId, R.raw.product);
                 break;
             case R.id.navigation_notifications:
                 replaceFragment(new NotificationsFragment());
