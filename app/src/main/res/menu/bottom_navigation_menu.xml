@@ -6,11 +6,12 @@
         android:title="Inicio"
         />
     <item
-        android:id="@+id/navigation_dashboard"
-        android:title="Ajustes"
+        android:id="@+id/navigation_productos"
+        android:title="Productos"
         />
     <item
         android:id="@+id/navigation_notifications"
         android:title="Notificaciones"
         />
+
 </menu>
