@@ -147,7 +147,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.navigation_productos:
                 replaceFragment(new ProductosFragment());
-                setLottieAnimation(itemId, R.raw.product);
+                setLottieAnimation(itemId, R.raw.clientes);
                 break;
             case R.id.navigation_notifications:
                 replaceFragment(new NotificationsFragment());

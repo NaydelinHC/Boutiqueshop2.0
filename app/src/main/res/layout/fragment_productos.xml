@@ -1,10 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.productos.ProductosFragment">
+    tools:context=".ui.productos.ProductosFragment"
+    android:orientation="vertical"
+    android:background="@drawable/fondoclientes">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationViewclientes"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        app:lottie_rawRes="@raw/cliente2"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"/>
 
     <TextView
         android:id="@+id/textView"
@@ -16,20 +31,45 @@
         app:layout_constraintHorizontal_bias="0.158"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.115" />
+        app:layout_constraintVertical_bias="0.115"
+        android:layout_marginStart="30dp"
+        />
 
-    <EditText
-        android:id="@+id/edittextid"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.308"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.16" />
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edittextid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.308"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.16"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"/>
+        <Button
+            android:id="@+id/btnget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.876"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.161"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+
 
     <TextView
         android:id="@+id/textView2"
@@ -41,7 +81,9 @@
         app:layout_constraintHorizontal_bias="0.175"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.251" />
+        app:layout_constraintVertical_bias="0.251"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"/>
 
     <EditText
         android:id="@+id/edittextname"
@@ -54,7 +96,9 @@
         app:layout_constraintHorizontal_bias="0.308"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.323" />
+        app:layout_constraintVertical_bias="0.323"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"/>
 
     <TextView
         android:id="@+id/textView3"
@@ -66,7 +110,9 @@
         app:layout_constraintHorizontal_bias="0.175"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.41" />
+        app:layout_constraintVertical_bias="0.41"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"/>
 
     <EditText
         android:id="@+id/edittextaddress"
@@ -79,19 +125,60 @@
         app:layout_constraintHorizontal_bias="0.308"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.482" />
+        app:layout_constraintVertical_bias="0.482"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"/>
 
-    <Button
-        android:id="@+id/btnAdd"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.198"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.591" />
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.198"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.591"
+            android:layout_gravity="center"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="15dp"/>
+
+        <Button
+            android:id="@+id/btnupdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.534"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.591"
+            android:layout_gravity="center"
+            android:layout_marginEnd="15dp"/>
+
+        <Button
+            android:id="@+id/btndelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.872"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.591"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
 
     <TextView
         android:id="@+id/textViewResult"
@@ -103,42 +190,11 @@
         app:layout_constraintHorizontal_bias="0.183"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.679" />
+        app:layout_constraintVertical_bias="0.679"
+        android:layout_marginStart="30dp"/>
 
-    <Button
-        android:id="@+id/btnupdate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Update"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.534"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.591" />
 
-    <Button
-        android:id="@+id/btndelete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Delete"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.872"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.591" />
 
-    <Button
-        android:id="@+id/btnget"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Get"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.876"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.161" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

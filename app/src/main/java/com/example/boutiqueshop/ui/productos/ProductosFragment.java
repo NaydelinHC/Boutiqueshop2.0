@@ -14,6 +14,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.airbnb.lottie.LottieAnimationView;
+import com.airbnb.lottie.LottieDrawable;
 import com.example.boutiqueshop.R;
 import com.example.boutiqueshop.databinding.FragmentGalleryBinding;
 import com.example.boutiqueshop.databinding.FragmentProductosBinding;
@@ -45,6 +47,7 @@ public class ProductosFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
         View rootView = inflater.inflate(R.layout.fragment_productos, container, false);
 
         editTextId = rootView.findViewById(R.id.edittextid);
@@ -56,6 +59,13 @@ public class ProductosFragment extends Fragment {
         Button buttonUpdate = rootView.findViewById(R.id.btnupdate);
         Button buttonDelete = rootView.findViewById(R.id.btndelete);
         Button buttonGet = rootView.findViewById(R.id.btnget);
+
+        LottieAnimationView lottieAnimationView = rootView.findViewById(R.id.lottieAnimationViewclientes);
+
+
+        lottieAnimationView.setAnimation(R.raw.cliente2);
+        lottieAnimationView.setRepeatCount(LottieDrawable.INFINITE);
+        lottieAnimationView.playAnimation();
 
         buttonAdd.setOnClickListener(new View.OnClickListener() {
             @Override
